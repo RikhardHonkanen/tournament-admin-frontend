@@ -11,7 +11,7 @@ function App() {
   const [tournaments, setTournaments] = useState([]);
 
   async function getTournamentsNear() {
-    let url = api + 'tournaments/near';
+    let url = api + 'api/tournaments/near';
     url += '?latitude=10.000000?longitude=15.000000';
   
     const response = await fetch(url);
